@@ -1,10 +1,12 @@
 (function (root) {
     var maze = {};
+    var animation = {};
 
     maze.EMPTY = 0;
     maze.WALL = -1;
     maze.PATH = -2;
     maze.CURRENT = -3;
+    animation.INTERVAL = 100
 
     maze.MAZE_21 = [
         [-1, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
@@ -137,4 +139,5 @@
     ];
 
     root.maze = maze;
+    root.animation = animation;
 })(this);
